@@ -44,7 +44,7 @@ class Schedule:
             driver.close()
 
         # create the schedule_data
-        # structure: [show_name, weekday_num, hour_start, end_time (datetime.now().strftime("%H:%M:%S.%f"))]
+        # structure: [show_name, start_time, end_time (datetime.now().strftime("%H:%M:%S.%f"))]
         schedule_tuples = Schedule.create_tuples_of_two(schedule_txt.split("\n"))
 
         # loop over shows in schedule: create a new schedule w only shows that have a reference in keywords.
@@ -52,10 +52,8 @@ class Schedule:
             for key in parameters.show_keywords:
                 # ignore shows with '*' (replays)
                 if (key in show_name.lower()) and ('*' not in show_name):
-                    day = [datetime.today().weekday()]
-                    # TODO: do not return day in a list.
                     start_time, end_time = show_time.split('–')
-                    self.schedule_data.append([show_name, day, start_time, end_time])
+                    self.schedule_data.append([show_name, start_time, end_time])
 
         return self.schedule_data
 

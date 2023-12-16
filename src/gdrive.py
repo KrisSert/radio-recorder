@@ -16,22 +16,23 @@ from googleapiclient.http import MediaFileUpload
 
 
 def upload(path):
+    logging.info('Starting upload of file: ' + path + ' to GoogleDrive')
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
     # time.
-    if os.path.exists('params/token.pickle'):
-        with open('params/token.pickle', 'rb') as token:
+    if os.path.exists('../params/token.pickle'):
+        with open('../params/token.pickle', 'rb') as token:
             creds = pickle.load(token)
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file('params/credentials.json', SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('../params/credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open('params/token.pickle', 'wb') as token:
+        with open('../params/token.pickle', 'wb') as token:
             pickle.dump(creds, token)
     service = build('drive', 'v3', credentials=creds,
                     cache_discovery=False)  # cache_discovery=false avoids "ModuleNotFoundError: No module named 'oauth2client'" Error
@@ -70,8 +71,8 @@ def upload(path):
 # same algorithm as clean_recordings(), except running in Google Drive folder.
 def clean_gdrive(recordings_state):
     creds = None
-    if os.path.exists('params/token.pickle'):
-        with open('params/token.pickle', 'rb') as token:
+    if os.path.exists('../params/token.pickle'):
+        with open('../params/token.pickle', 'rb') as token:
             creds = pickle.load(token)
 
     # If there are no (valid) credentials available, let the user log in.
@@ -79,10 +80,10 @@ def clean_gdrive(recordings_state):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file('params/credentials.json', parameters.SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('../params/credentials.json', parameters.SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open('params/token.pickle', 'wb') as token:
+        with open('../params/token.pickle', 'wb') as token:
             pickle.dump(creds, token)
     service = build('drive', 'v3', credentials=creds,
                     cache_discovery=False)  # cache_discovery=false avoids "ModuleNotFoundError: No module named 'oauth2client'" Error

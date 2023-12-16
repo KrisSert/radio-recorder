@@ -3,5 +3,10 @@
 /workspace.xml
 
 # user defined
-/passwords/credentials.json
-/passwords/token.pickle
+.idea/
+chrome-win64/
+chromedriver.exe
+ffmpeg-6.1-full_build/
+params/__pycache__/
+params/credentials.json
+params/token.pickle
