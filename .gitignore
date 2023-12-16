@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# user defined
+/passwords/credentials.json
+/passwords/token.pickle

@@ -1,0 +1,541 @@
+2020-11-17 09:26:12,131; _____________________________________________________
+2020-11-17 09:26:12,131;Start of execution. Break time: 18:00:00
+2020-11-17 09:26:12,131;shows_on_today:[['Hommikuprogramm', [1], '07:00:00', '10:00:00'], ['Investor Toomase tund', [1], '11:00:00', '12:00:00'], ['Investor Toomase tund*', [1], '17:00:00', '18:00:00']]
+2020-11-17 09:26:12,131;script running..
+2020-11-17 09:26:12,475;Starting recording: recordings/17-11-2020_Hommikuprogramm.mp3
+2020-11-17 10:27:37,001; _____________________________________________________
+2020-11-17 10:27:37,001;Start of execution. Break time: 18:00:00
+2020-11-17 10:27:37,002;shows_on_today:[['Hommikuprogramm', [1], '07:00:00', '10:00:00'], ['Investor Toomase tund', [1], '11:00:00', '12:00:00'], ['Investor Toomase tund*', [1], '17:00:00', '18:00:00']]
+2020-11-17 10:27:37,003;script running..
+2020-11-17 11:00:00,285;Starting recording: recordings/17-11-2020_Investor Toomase tund.mp3
+2020-11-17 12:00:00,046;Recording finalized, closing file
+2020-11-17 12:00:00,048;Starting upload of file: recordings/17-11-2020_Investor Toomase tund.mp3 to GoogleDrive
+2020-11-17 12:00:03,144;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-17 12:00:03,144;syncgoogledrive.upload() :: Starting upload of file: recordings/17-11-2020_Investor Toomase tund.mp3 to GoogleDrive
+2020-11-17 12:00:03,898;Uploaded 6%.
+2020-11-17 12:00:04,352;Uploaded 12%.
+2020-11-17 12:00:04,831;Uploaded 19%.
+2020-11-17 12:00:05,368;Uploaded 25%.
+2020-11-17 12:00:05,852;Uploaded 31%.
+2020-11-17 12:00:06,327;Uploaded 38%.
+2020-11-17 12:00:06,813;Uploaded 44%.
+2020-11-17 12:00:07,341;Uploaded 50%.
+2020-11-17 12:00:07,868;Uploaded 57%.
+2020-11-17 12:00:08,375;Uploaded 63%.
+2020-11-17 12:00:08,847;Uploaded 69%.
+2020-11-17 12:00:09,367;Uploaded 76%.
+2020-11-17 12:00:09,845;Uploaded 82%.
+2020-11-17 12:00:10,325;Uploaded 88%.
+2020-11-17 12:00:10,866;Uploaded 95%.
+2020-11-17 12:00:12,242;upload() :: Upload succeeded
+2020-11-17 12:00:12,242;script running..
+2020-11-17 17:00:00,605;Starting recording: recordings/17-11-2020_Investor Toomase tund*.mp3
+2020-11-19 09:31:34,235; _____________________________________________________
+2020-11-19 09:31:34,236;Start of execution. Break time: 12:00:00
+2020-11-19 09:31:34,237;shows_on_today:[['Hommikuprogramm', [3], '07:00:00', '10:00:00'], ['Globaalne pilk', [3], '11:00:00', '12:00:00']]
+2020-11-19 09:31:34,237;script running..
+2020-11-19 09:31:34,750;Starting recording: recordings/19-11-2020_Hommikuprogramm.mp3
+2020-11-19 10:00:00,019;Recording finalized, closing file
+2020-11-19 10:00:00,020;Starting upload of file: recordings/19-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-19 10:00:01,255;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-19 10:00:01,255;syncgoogledrive.upload() :: Starting upload of file: recordings/19-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-19 10:00:02,030;Uploaded 13%.
+2020-11-19 10:00:02,517;Uploaded 26%.
+2020-11-19 10:00:02,999;Uploaded 39%.
+2020-11-19 10:00:03,529;Uploaded 52%.
+2020-11-19 10:00:03,993;Uploaded 65%.
+2020-11-19 10:00:04,454;Uploaded 78%.
+2020-11-19 10:00:04,924;Uploaded 91%.
+2020-11-19 10:00:06,117;upload() :: Upload succeeded
+2020-11-19 10:00:06,118;script running..
+2020-11-19 11:00:00,459;Starting recording: recordings/19-11-2020_Globaalne pilk.mp3
+2020-11-19 12:00:00,000;Recording finalized, closing file
+2020-11-19 12:00:00,001;Starting upload of file: recordings/19-11-2020_Globaalne pilk.mp3 to GoogleDrive
+2020-11-19 12:00:01,951;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-19 12:00:01,951;syncgoogledrive.upload() :: Starting upload of file: recordings/19-11-2020_Globaalne pilk.mp3 to GoogleDrive
+2020-11-19 12:00:02,701;Uploaded 6%.
+2020-11-19 12:00:03,195;Uploaded 12%.
+2020-11-19 12:00:03,682;Uploaded 18%.
+2020-11-19 12:00:04,221;Uploaded 24%.
+2020-11-19 12:00:04,755;Uploaded 30%.
+2020-11-19 12:00:05,274;Uploaded 36%.
+2020-11-19 12:00:05,750;Uploaded 42%.
+2020-11-19 12:00:06,285;Uploaded 48%.
+2020-11-19 12:00:06,746;Uploaded 54%.
+2020-11-19 12:00:07,196;Uploaded 60%.
+2020-11-19 12:00:07,688;Uploaded 66%.
+2020-11-19 12:00:08,202;Uploaded 72%.
+2020-11-19 12:00:08,670;Uploaded 78%.
+2020-11-19 12:00:09,181;Uploaded 84%.
+2020-11-19 12:00:09,706;Uploaded 90%.
+2020-11-19 12:00:10,247;Uploaded 96%.
+2020-11-19 12:00:11,489;upload() :: Upload succeeded
+2020-11-19 12:00:11,497;maintenance.clean_recordings() - plenty of space left in recordings/
+2020-11-19 12:00:11,497;Used space: 0.095404933%
+2020-11-19 12:00:12,108;maintenance.clean_Drive() :: syncing "recordings" between local & Google_Drive/Äripäeva raadio
+2020-11-20 09:25:23,907; _____________________________________________________
+2020-11-20 09:25:23,907;Start of execution. Break time: 12:00:00
+2020-11-20 09:25:23,907;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['Äripäev eetris', [4], '11:00:00', '12:00:00'], ['Äripäev eetris', [4], '11:00:00', '12:00:00']]
+2020-11-20 09:25:23,907;script running..
+2020-11-20 09:25:24,610;Starting recording: recordings/20-11-2020_Hommikuprogramm.mp3
+2020-11-20 10:00:00,057;Recording finalized, closing file
+2020-11-20 10:00:00,057;Starting upload of file: recordings/20-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-20 10:00:01,088;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-20 10:00:01,088;syncgoogledrive.upload() :: Starting upload of file: recordings/20-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-20 10:00:01,994;Uploaded 9%.
+2020-11-20 10:00:02,510;Uploaded 19%.
+2020-11-20 10:00:02,979;Uploaded 28%.
+2020-11-20 10:00:03,494;Uploaded 38%.
+2020-11-20 10:00:03,979;Uploaded 47%.
+2020-11-20 10:00:04,542;Uploaded 57%.
+2020-11-20 10:00:05,042;Uploaded 67%.
+2020-11-20 10:00:05,636;Uploaded 76%.
+2020-11-20 10:00:06,167;Uploaded 86%.
+2020-11-20 10:00:06,683;Uploaded 95%.
+2020-11-20 10:00:07,980;upload() :: Upload succeeded
+2020-11-20 10:00:07,980;script running..
+2020-11-20 11:00:00,652;Starting recording: recordings/20-11-2020_Äripäev eetris.mp3
+2020-11-20 12:00:00,103;Recording finalized, closing file
+2020-11-20 12:00:00,119;Starting upload of file: recordings/20-11-2020_Äripäev eetris.mp3 to GoogleDrive
+2020-11-20 12:00:01,603;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-20 12:00:01,603;syncgoogledrive.upload() :: Starting upload of file: recordings/20-11-2020_Äripäev eetris.mp3 to GoogleDrive
+2020-11-20 12:00:02,369;Uploaded 6%.
+2020-11-20 12:00:02,854;Uploaded 12%.
+2020-11-20 12:00:03,354;Uploaded 18%.
+2020-11-20 12:00:03,947;Uploaded 25%.
+2020-11-20 12:00:04,416;Uploaded 31%.
+2020-11-20 12:00:04,995;Uploaded 37%.
+2020-11-20 12:00:05,495;Uploaded 44%.
+2020-11-20 12:00:06,104;Uploaded 50%.
+2020-11-20 12:00:06,682;Uploaded 56%.
+2020-11-20 12:00:07,214;Uploaded 63%.
+2020-11-20 12:00:07,776;Uploaded 69%.
+2020-11-20 12:00:08,386;Uploaded 75%.
+2020-11-20 12:00:08,917;Uploaded 81%.
+2020-11-20 12:00:09,448;Uploaded 88%.
+2020-11-20 12:00:10,027;Uploaded 94%.
+2020-11-20 12:00:11,370;upload() :: Upload succeeded
+2020-11-20 12:00:11,370;maintenance.clean_recordings() - plenty of space left in recordings/
+2020-11-20 12:00:11,370;Used space: 0.1105677734%
+2020-11-20 12:00:12,558;maintenance.clean_Drive() :: syncing "recordings" between local & Google_Drive/Äripäeva raadio
+2020-11-23 10:13:26,975; _____________________________________________________
+2020-11-23 10:13:26,976;Start of execution. Break time: 16:00:00
+2020-11-23 10:13:26,976;shows_on_today:[['Hommikuprogramm', [0], '07:00:00', '10:00:00'], ['Kuum tool', [0], '11:00:00', '12:00:00'], ['Lavajutud', [0], '15:00:00', '16:00:00']]
+2020-11-23 10:13:26,976;script running..
+2020-11-23 11:00:01,167;Starting recording: recordings/23-11-2020_Kuum tool.mp3
+2020-11-23 12:00:00,066;Recording finalized, closing file
+2020-11-23 12:00:00,067;Starting upload of file: recordings/23-11-2020_Kuum tool.mp3 to GoogleDrive
+2020-11-23 12:00:01,252;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-23 12:00:01,252;syncgoogledrive.upload() :: Starting upload of file: recordings/23-11-2020_Kuum tool.mp3 to GoogleDrive
+2020-11-23 12:00:02,053;Uploaded 6%.
+2020-11-23 12:00:02,569;Uploaded 12%.
+2020-11-23 12:00:03,114;Uploaded 18%.
+2020-11-23 12:00:03,695;Uploaded 24%.
+2020-11-23 12:00:04,244;Uploaded 30%.
+2020-11-23 12:00:04,793;Uploaded 37%.
+2020-11-23 12:00:05,319;Uploaded 43%.
+2020-11-23 12:00:05,942;Uploaded 49%.
+2020-11-23 12:00:06,497;Uploaded 55%.
+2020-11-23 12:00:07,022;Uploaded 61%.
+2020-11-23 12:00:07,584;Uploaded 68%.
+2020-11-23 12:00:08,180;Uploaded 74%.
+2020-11-23 12:00:08,696;Uploaded 80%.
+2020-11-23 12:00:09,314;Uploaded 86%.
+2020-11-23 12:00:09,833;Uploaded 92%.
+2020-11-23 12:00:10,404;Uploaded 99%.
+2020-11-23 12:00:11,522;upload() :: Upload succeeded
+2020-11-23 12:00:11,522;script running..
+2020-11-23 15:00:00,836;Starting recording: recordings/23-11-2020_Lavajutud.mp3
+2020-11-23 16:00:00,021;Recording finalized, closing file
+2020-11-23 16:00:00,022;Starting upload of file: recordings/23-11-2020_Lavajutud.mp3 to GoogleDrive
+2020-11-23 16:00:01,120;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-23 16:00:01,121;syncgoogledrive.upload() :: Starting upload of file: recordings/23-11-2020_Lavajutud.mp3 to GoogleDrive
+2020-11-23 16:00:02,100;Uploaded 6%.
+2020-11-23 16:00:02,712;Uploaded 12%.
+2020-11-23 16:00:03,352;Uploaded 18%.
+2020-11-23 16:00:04,431;Uploaded 24%.
+2020-11-23 16:00:05,056;Uploaded 30%.
+2020-11-23 16:00:05,667;Uploaded 36%.
+2020-11-23 16:00:06,260;Uploaded 42%.
+2020-11-23 16:00:06,998;Uploaded 48%.
+2020-11-23 16:00:07,592;Uploaded 54%.
+2020-11-23 16:00:08,230;Uploaded 60%.
+2020-11-23 16:00:08,826;Uploaded 67%.
+2020-11-23 16:00:09,454;Uploaded 73%.
+2020-11-23 16:00:10,028;Uploaded 79%.
+2020-11-23 16:00:10,606;Uploaded 85%.
+2020-11-23 16:00:11,212;Uploaded 91%.
+2020-11-23 16:00:11,867;Uploaded 97%.
+2020-11-23 16:00:13,507;upload() :: Upload succeeded
+2020-11-23 16:00:13,510;maintenance.clean_recordings() - plenty of space left in recordings/
+2020-11-23 16:00:13,510;Used space: 0.1293398138%
+2020-11-23 16:00:14,328;maintenance.clean_Drive() :: syncing "recordings" between local & Google_Drive/Äripäeva raadio
+2020-11-24 08:45:56,488; _____________________________________________________
+2020-11-24 08:45:56,488;Start of execution. Break time: 12:00:00
+2020-11-24 08:45:56,488;shows_on_today:[['Hommikuprogramm', [1], '07:00:00', '10:00:00'], ['Investor Toomase tund', [1], '11:00:00', '12:00:00']]
+2020-11-24 08:45:56,488;script running..
+2020-11-24 08:45:57,095;Starting recording: recordings/24-11-2020_Hommikuprogramm.mp3
+2020-11-24 10:00:00,000;Recording finalized, closing file
+2020-11-24 10:00:00,002;Starting upload of file: recordings/24-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-24 10:00:01,291;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-24 10:00:01,291;syncgoogledrive.upload() :: Starting upload of file: recordings/24-11-2020_Hommikuprogramm.mp3 to GoogleDrive
+2020-11-24 10:00:02,227;Uploaded 4%.
+2020-11-24 10:00:02,744;Uploaded 9%.
+2020-11-24 10:00:03,268;Uploaded 14%.
+2020-11-24 10:00:03,822;Uploaded 19%.
+2020-11-24 10:00:04,330;Uploaded 24%.
+2020-11-24 10:00:04,875;Uploaded 29%.
+2020-11-24 10:00:05,385;Uploaded 33%.
+2020-11-24 10:00:05,951;Uploaded 38%.
+2020-11-24 10:00:06,524;Uploaded 43%.
+2020-11-24 10:00:07,051;Uploaded 48%.
+2020-11-24 10:00:07,607;Uploaded 53%.
+2020-11-24 10:00:08,193;Uploaded 58%.
+2020-11-24 10:00:08,714;Uploaded 62%.
+2020-11-24 10:00:09,231;Uploaded 67%.
+2020-11-24 10:00:09,752;Uploaded 72%.
+2020-11-24 10:00:10,335;Uploaded 77%.
+2020-11-24 10:00:10,848;Uploaded 82%.
+2020-11-24 10:00:11,338;Uploaded 87%.
+2020-11-24 10:00:11,833;Uploaded 91%.
+2020-11-24 10:00:12,394;Uploaded 96%.
+2020-11-24 10:00:14,038;upload() :: Upload succeeded
+2020-11-24 10:00:14,038;script running..
+2020-11-24 11:00:01,119;Starting recording: recordings/24-11-2020_Investor Toomase tund.mp3
+2020-11-24 12:00:00,000;Recording finalized, closing file
+2020-11-24 12:00:00,001;Starting upload of file: recordings/24-11-2020_Investor Toomase tund.mp3 to GoogleDrive
+2020-11-24 12:00:01,372;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2020-11-24 12:00:01,373;syncgoogledrive.upload() :: Starting upload of file: recordings/24-11-2020_Investor Toomase tund.mp3 to GoogleDrive
+2020-11-24 12:00:02,110;Uploaded 6%.
+2020-11-24 12:00:02,607;Uploaded 13%.
+2020-11-24 12:00:03,080;Uploaded 20%.
+2020-11-24 12:00:03,602;Uploaded 26%.
+2020-11-24 12:00:04,112;Uploaded 33%.
+2020-11-24 12:00:04,620;Uploaded 40%.
+2020-11-24 12:00:05,111;Uploaded 46%.
+2020-11-24 12:00:05,650;Uploaded 53%.
+2020-11-24 12:00:06,120;Uploaded 60%.
+2020-11-24 12:00:06,665;Uploaded 66%.
+2020-11-24 12:00:07,154;Uploaded 73%.
+2020-11-24 12:00:07,683;Uploaded 80%.
+2020-11-24 12:00:08,169;Uploaded 86%.
+2020-11-24 12:00:08,713;Uploaded 93%.
+2020-11-24 12:00:10,155;upload() :: Upload succeeded
+2020-11-24 12:00:10,158;maintenance.clean_recordings() - plenty of space left in recordings/
+2020-11-24 12:00:10,159;Used space: 0.1498742718%
+2020-11-24 12:00:11,436;maintenance.clean_Drive() :: syncing "recordings" between local & Google_Drive/Äripäeva raadio
+2020-12-29 15:09:22,364;_____________________________________________________
+2020-12-29 15:09:22,367;Start of execution:
+2020-12-29 15:14:20,821;_____________________________________________________
+2020-12-29 15:14:20,822;Start of execution:
+2020-12-29 15:14:35,964;_____________________________________________________
+2020-12-29 15:14:35,965;Start of execution:
+2020-12-29 15:15:42,946;selenium NoSuchElementException :: schedule in website is not accessible. recording all shows.
+2020-12-29 15:16:39,682;Break time: 15:00:00
+2020-12-29 15:16:46,423;shows_on_today:[['Hommikuprogramm', [1], '07:00:00', '10:00:00'], ['tund_11_12', [1], '11:00:00', '12:00:00'], ['tund_12_15', [1], '12:00:00', '15:00:00']]
+2021-01-29 19:24:04,138;_____________________________________________________
+2021-01-29 19:24:04,138;Start of execution:
+2021-01-29 19:27:27,455;_____________________________________________________
+2021-01-29 19:27:27,456;Start of execution:
+2021-01-29 19:29:21,782;Break time: 12:00:00
+2021-01-29 19:29:24,547;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['Äripäev eetris', [4], '11:00:00', '12:00:00'], ['Äripäev eetris', [4], '11:00:00', '12:00:00']]
+2021-01-29 19:29:34,771;maintenance.clean_recordings() - plenty of space left in recordings/
+2021-01-29 19:29:34,771;Used space: 0.1498742718%
+2021-01-29 19:31:18,523;_____________________________________________________
+2021-01-29 19:31:18,523;Start of execution:
+2021-01-29 19:31:23,586;Break time: 19:35:00
+2021-01-29 19:31:23,586;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '19:35:00']]
+2021-01-29 19:31:23,586;script running..
+2021-01-29 19:31:23,587;Starting recording: recordings/29-01-2021_tund_12_15.mp3
+2021-01-29 19:31:45,424;_____________________________________________________
+2021-01-29 19:31:45,425;Start of execution:
+2021-01-29 19:31:57,678;Break time: 19:35:00
+2021-01-29 19:32:00,704;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '19:35:00']]
+2021-01-29 19:32:01,639;script running..
+2021-01-29 19:32:37,964;Starting recording: recordings/29-01-2021_tund_12_15.mp3
+2021-01-29 19:55:57,021;_____________________________________________________
+2021-01-29 19:55:57,022;Start of execution:
+2021-01-29 19:56:08,803;Break time: 19:37:00
+2021-01-29 19:56:08,804;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '19:37:00']]
+2021-01-29 19:56:08,815;maintenance.clean_recordings() - plenty of space left in recordings/
+2021-01-29 19:56:08,815;Used space: 0.1498742718%
+2021-01-29 19:56:10,143;maintenance.clean_Drive() :: syncing "recordings" between local & Google_Drive/Äripäeva raadio
+2021-01-29 19:56:10,676;maintenance.clean_Drive() :: deleting file 25-12-2020_Äripäev eetris.mp3in GoogleDrive, id: 1bDWjuNLl8pP5Oef0cOtLA0z2R9FehIIH
+2021-01-29 19:56:11,402;maintenance.clean_Drive() :: deleting file 23-12-2020_Äripäeva fookuses.mp3in GoogleDrive, id: 1Kc21lg_C9GNkSFpxjM1taS7xXiTu15Ml
+2021-01-29 19:56:11,969;maintenance.clean_Drive() :: deleting file 23-12-2020_Äripäeva TOP.mp3in GoogleDrive, id: 1lI-k3nYFHc1DzJijEJGeKC2oHv4Xv6pi
+2021-01-29 19:56:12,545;maintenance.clean_Drive() :: deleting file 23-12-2020_Hommikuprogramm.mp3in GoogleDrive, id: 1fyPaNUXPtH4z38f314VbPxtIcAOBEIlz
+2021-01-29 19:56:42,588;_____________________________________________________
+2021-01-29 19:56:42,589;Start of execution:
+2021-01-29 19:56:48,897;Break time: 19:59:00
+2021-01-29 19:56:48,897;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '19:59:00']]
+2021-01-29 19:56:48,898;script running..
+2021-01-29 19:56:51,516;Starting recording: recordings/29-01-2021_tund_12_15.mp3
+2021-01-29 19:59:42,711;_____________________________________________________
+2021-01-29 19:59:42,711;Start of execution:
+2021-01-29 19:59:47,842;Break time: 21:30:00
+2021-01-29 19:59:47,842;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '21:30:00']]
+2021-01-29 19:59:47,842;script running..
+2021-01-29 19:59:47,842;Starting recording: recordings/29-01-2021_tund_12_15.mp3
+2021-01-29 20:02:40,346;_____________________________________________________
+2021-01-29 20:02:40,346;Start of execution:
+2021-01-29 20:02:46,799;Break time: 20:05:00
+2021-01-29 20:02:46,799;shows_on_today:[['Hommikuprogramm', [4], '07:00:00', '10:00:00'], ['tund_11_12', [4], '11:00:00', '12:00:00'], ['tund_12_15', [4], '12:00:00', '20:05:00']]
+2021-01-29 20:02:46,799;script running..
+2021-01-29 20:02:46,799;Starting recording: recordings/29-01-2021_tund_12_15.mp3
+2021-01-29 20:05:00,000;Recording finalized, closing file
+2021-01-29 20:05:00,000;Starting upload of file: recordings/29-01-2021_tund_12_15.mp3 to GoogleDrive
+2021-01-29 20:05:01,094;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-01-29 20:05:01,094;syncgoogledrive.upload() :: Starting upload of file: recordings/29-01-2021_tund_12_15.mp3 to GoogleDrive
+2021-01-29 20:05:02,923;upload() :: Upload succeeded
+2021-04-18 13:02:13,151;_____________________________________________________
+2021-04-18 13:02:13,154;Start of execution:
+2021-04-18 13:02:13,154;script running..
+2021-04-18 13:02:13,155;Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:04:47,457;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-04-18 13:04:50,111;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:06:24,832;_____________________________________________________
+2021-04-18 13:06:24,833;Start of execution:
+2021-04-18 13:06:24,833;script running..
+2021-04-18 13:06:24,833;Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:06:28,862;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-04-18 13:06:29,766;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:06:42,994;upload() :: Upload succeeded
+2021-04-18 13:16:22,353;_____________________________________________________
+2021-04-18 13:16:22,353;Start of execution:
+2021-04-18 13:16:22,354;script running..
+2021-04-18 13:16:22,354;Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:16:23,337;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-04-18 13:16:23,337;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:16:24,082;Uploaded 4%.
+2021-04-18 13:16:24,656;Uploaded 8%.
+2021-04-18 13:16:25,129;Uploaded 12%.
+2021-04-18 13:16:25,682;Uploaded 16%.
+2021-04-18 13:16:26,207;Uploaded 20%.
+2021-04-18 13:16:26,656;Uploaded 24%.
+2021-04-18 13:16:27,142;Uploaded 28%.
+2021-04-18 13:16:27,750;Uploaded 32%.
+2021-04-18 13:16:28,365;Uploaded 36%.
+2021-04-18 13:16:28,891;Uploaded 40%.
+2021-04-18 13:16:29,361;Uploaded 44%.
+2021-04-18 13:16:29,897;Uploaded 48%.
+2021-04-18 13:16:30,373;Uploaded 53%.
+2021-04-18 13:16:30,857;Uploaded 57%.
+2021-04-18 13:16:31,351;Uploaded 61%.
+2021-04-18 13:16:31,919;Uploaded 65%.
+2021-04-18 13:16:32,403;Uploaded 69%.
+2021-04-18 13:16:32,997;Uploaded 73%.
+2021-04-18 13:16:33,504;Uploaded 77%.
+2021-04-18 13:16:34,014;Uploaded 81%.
+2021-04-18 13:16:34,832;Uploaded 85%.
+2021-04-18 13:16:35,264;Uploaded 89%.
+2021-04-18 13:16:35,749;Uploaded 93%.
+2021-04-18 13:16:36,268;Uploaded 97%.
+2021-04-18 13:16:37,281;upload() :: Upload succeeded
+2021-04-18 13:16:46,205;_____________________________________________________
+2021-04-18 13:16:46,205;Start of execution:
+2021-04-18 13:16:46,205;script running..
+2021-04-18 13:16:46,206;Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:17:06,079;_____________________________________________________
+2021-04-18 13:17:06,079;Start of execution:
+2021-04-18 13:17:06,080;script running..
+2021-04-18 13:17:06,080;Starting upload of file: recordings/test_upload.mp3 to GoogleDrive
+2021-04-18 13:18:39,785;_____________________________________________________
+2021-04-18 13:18:39,785;Start of execution:
+2021-04-18 13:18:39,785;script running..
+2021-04-18 13:18:39,786;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:19:07,393;_____________________________________________________
+2021-04-18 13:19:07,393;Start of execution:
+2021-04-18 13:19:07,393;script running..
+2021-04-18 13:19:07,393;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:20:16,444;_____________________________________________________
+2021-04-18 13:20:16,446;Start of execution:
+2021-04-18 13:20:16,447;script running..
+2021-04-18 13:20:16,447;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:20:27,713;_____________________________________________________
+2021-04-18 13:20:27,714;Start of execution:
+2021-04-18 13:20:27,715;script running..
+2021-04-18 13:20:27,715;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:20:51,164;_____________________________________________________
+2021-04-18 13:20:51,165;Start of execution:
+2021-04-18 13:20:51,165;script running..
+2021-04-18 13:20:59,088;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:21:31,633;_____________________________________________________
+2021-04-18 13:21:31,634;Start of execution:
+2021-04-18 13:21:31,634;script running..
+2021-04-18 13:21:49,698;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:22:11,771;_____________________________________________________
+2021-04-18 13:22:11,772;Start of execution:
+2021-04-18 13:22:11,772;script running..
+2021-04-18 13:22:14,077;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:23:28,257;_____________________________________________________
+2021-04-18 13:23:28,258;Start of execution:
+2021-04-18 13:23:28,258;script running..
+2021-04-18 13:23:42,731;_____________________________________________________
+2021-04-18 13:23:42,732;Start of execution:
+2021-04-18 13:23:42,732;script running..
+2021-04-18 13:23:42,733;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:27:02,525;_____________________________________________________
+2021-04-18 13:27:02,526;Start of execution:
+2021-04-18 13:27:02,526;script running..
+2021-04-18 13:27:02,526;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:27:09,181;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-04-18 13:27:09,711;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-04-18 13:27:18,407;Uploaded 4%.
+2021-04-18 13:27:22,090;Uploaded 8%.
+2021-04-18 13:27:23,350;Uploaded 12%.
+2021-04-18 13:27:24,534;Uploaded 16%.
+2021-04-18 13:27:25,366;Uploaded 20%.
+2021-04-18 13:27:26,001;Uploaded 24%.
+2021-04-18 13:27:26,644;Uploaded 28%.
+2021-04-18 13:27:27,240;Uploaded 32%.
+2021-04-18 13:27:27,886;Uploaded 36%.
+2021-04-18 13:27:28,544;Uploaded 40%.
+2021-04-18 13:27:29,248;Uploaded 44%.
+2021-04-18 13:27:29,896;Uploaded 48%.
+2021-04-18 13:27:30,559;Uploaded 53%.
+2021-04-18 13:27:31,283;Uploaded 57%.
+2021-04-18 13:27:31,859;Uploaded 61%.
+2021-04-18 13:27:32,517;Uploaded 65%.
+2021-04-18 13:27:33,048;Uploaded 69%.
+2021-04-18 13:27:33,573;Uploaded 73%.
+2021-04-18 13:27:34,091;Uploaded 77%.
+2021-04-18 13:27:34,697;Uploaded 81%.
+2021-04-18 13:27:35,211;Uploaded 85%.
+2021-04-18 13:27:35,718;Uploaded 89%.
+2021-04-18 13:27:36,337;Uploaded 93%.
+2021-04-18 13:27:36,890;Uploaded 97%.
+2021-04-18 13:27:37,895;upload() :: Upload succeeded
+2021-05-30 18:52:06,534;_____________________________________________________
+2021-05-30 18:52:06,535;Start of execution:
+2021-05-30 18:52:06,535;script running..
+2021-05-30 18:52:06,536;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:06:45,411;_____________________________________________________
+2021-05-30 19:06:45,412;Start of execution:
+2021-05-30 19:06:45,412;script running..
+2021-05-30 19:06:45,412;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:07:15,856;_____________________________________________________
+2021-05-30 19:07:15,856;Start of execution:
+2021-05-30 19:07:15,856;script running..
+2021-05-30 19:07:15,856;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:07:17,273;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:07:17,273;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:07:17,901;Uploaded 4%.
+2021-05-30 19:07:18,304;Uploaded 8%.
+2021-05-30 19:07:18,715;Uploaded 12%.
+2021-05-30 19:07:19,169;Uploaded 16%.
+2021-05-30 19:07:19,547;Uploaded 20%.
+2021-05-30 19:07:19,944;Uploaded 24%.
+2021-05-30 19:07:20,334;Uploaded 28%.
+2021-05-30 19:07:20,802;Uploaded 32%.
+2021-05-30 19:07:21,186;Uploaded 36%.
+2021-05-30 19:07:21,594;Uploaded 40%.
+2021-05-30 19:07:22,005;Uploaded 44%.
+2021-05-30 19:07:22,471;Uploaded 48%.
+2021-05-30 19:07:22,840;Uploaded 53%.
+2021-05-30 19:07:23,225;Uploaded 57%.
+2021-05-30 19:07:23,609;Uploaded 61%.
+2021-05-30 19:07:24,043;Uploaded 65%.
+2021-05-30 19:07:24,443;Uploaded 69%.
+2021-05-30 19:07:24,842;Uploaded 73%.
+2021-05-30 19:07:25,227;Uploaded 77%.
+2021-05-30 19:07:25,682;Uploaded 81%.
+2021-05-30 19:07:26,102;Uploaded 85%.
+2021-05-30 19:07:26,503;Uploaded 89%.
+2021-05-30 19:07:26,896;Uploaded 93%.
+2021-05-30 19:07:27,388;Uploaded 97%.
+2021-05-30 19:07:28,315;upload() :: Upload succeeded
+2021-05-30 19:31:18,976;_____________________________________________________
+2021-05-30 19:31:18,977;Start of execution:
+2021-05-30 19:31:18,977;script running..
+2021-05-30 19:31:18,978;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:31:22,145;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:31:31,619;_____________________________________________________
+2021-05-30 19:31:31,621;Start of execution:
+2021-05-30 19:31:31,622;script running..
+2021-05-30 19:31:31,622;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:31:33,142;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:33:31,941;_____________________________________________________
+2021-05-30 19:33:31,942;Start of execution:
+2021-05-30 19:33:31,942;script running..
+2021-05-30 19:33:31,943;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:33:34,042;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:38:51,481;_____________________________________________________
+2021-05-30 19:38:51,481;Start of execution:
+2021-05-30 19:38:51,482;script running..
+2021-05-30 19:38:51,482;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:38:52,942;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:40:50,936;_____________________________________________________
+2021-05-30 19:40:50,936;Start of execution:
+2021-05-30 19:40:50,936;script running..
+2021-05-30 19:40:50,936;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:40:52,597;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:40:59,061;_____________________________________________________
+2021-05-30 19:40:59,061;Start of execution:
+2021-05-30 19:40:59,061;script running..
+2021-05-30 19:40:59,061;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:41:00,343;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:42:10,414;_____________________________________________________
+2021-05-30 19:42:10,414;Start of execution:
+2021-05-30 19:42:10,414;script running..
+2021-05-30 19:42:10,414;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:42:11,729;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:42:12,263;syncgoogledrive.upload() :: Denied upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive, since file with same name already present
+2021-05-30 19:44:32,231;_____________________________________________________
+2021-05-30 19:44:32,231;Start of execution:
+2021-05-30 19:44:32,231;script running..
+2021-05-30 19:44:32,231;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:44:33,616;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:44:34,076;syncgoogledrive.upload() :: Denied upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive, since file with same name already present
+2021-05-30 19:45:19,968;_____________________________________________________
+2021-05-30 19:45:19,969;Start of execution:
+2021-05-30 19:45:19,969;script running..
+2021-05-30 19:45:19,970;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:45:21,171;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:47:23,630;_____________________________________________________
+2021-05-30 19:47:23,631;Start of execution:
+2021-05-30 19:47:23,631;script running..
+2021-05-30 19:47:23,631;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:47:25,331;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:47:43,164;syncgoogledrive.upload() :: Denied upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive, since file with same name already present
+2021-05-30 19:50:25,054;_____________________________________________________
+2021-05-30 19:50:25,054;Start of execution:
+2021-05-30 19:50:25,055;script running..
+2021-05-30 19:50:25,055;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:50:26,079;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:50:26,322;syncgoogledrive.upload() :: Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:50:27,106;Uploaded 4%.
+2021-05-30 19:50:27,540;Uploaded 8%.
+2021-05-30 19:50:27,994;Uploaded 12%.
+2021-05-30 19:50:28,474;Uploaded 16%.
+2021-05-30 19:50:28,898;Uploaded 20%.
+2021-05-30 19:50:29,346;Uploaded 24%.
+2021-05-30 19:50:29,758;Uploaded 28%.
+2021-05-30 19:50:30,215;Uploaded 32%.
+2021-05-30 19:50:30,636;Uploaded 36%.
+2021-05-30 19:50:31,064;Uploaded 40%.
+2021-05-30 19:50:31,482;Uploaded 44%.
+2021-05-30 19:50:31,964;Uploaded 48%.
+2021-05-30 19:50:32,392;Uploaded 53%.
+2021-05-30 19:50:32,805;Uploaded 57%.
+2021-05-30 19:50:33,254;Uploaded 61%.
+2021-05-30 19:50:33,726;Uploaded 65%.
+2021-05-30 19:50:34,165;Uploaded 69%.
+2021-05-30 19:50:34,597;Uploaded 73%.
+2021-05-30 19:50:35,017;Uploaded 77%.
+2021-05-30 19:50:35,511;Uploaded 81%.
+2021-05-30 19:50:35,941;Uploaded 85%.
+2021-05-30 19:50:36,393;Uploaded 89%.
+2021-05-30 19:50:36,821;Uploaded 93%.
+2021-05-30 19:50:37,262;Uploaded 97%.
+2021-05-30 19:50:38,233;upload() :: Upload succeeded
+2021-05-30 19:50:55,770;_____________________________________________________
+2021-05-30 19:50:55,771;Start of execution:
+2021-05-30 19:50:55,771;script running..
+2021-05-30 19:50:55,771;Starting upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive
+2021-05-30 19:50:56,723;syncgoogledrive.upload() :: Äripäeva raadio folder found in GoogleDrive
+2021-05-30 19:50:56,945;syncgoogledrive.upload() :: Denied upload of file: recordings/test_upload - Copy.mp3 to GoogleDrive, since file with same name already present
+2023-12-10 16:59:56,982;_____________________________________________________
+2023-12-10 16:59:56,983;Start of execution:
+2023-12-10 17:00:09,027;Exception managing chrome: error sending request for url (https://chromedriver.storage.googleapis.com/LATEST_RELEASE_114): error trying to connect: dns error: No such host is known. (os error 11001)
+2023-12-10 17:16:26,108;_____________________________________________________
+2023-12-10 17:16:26,109;Start of execution:
