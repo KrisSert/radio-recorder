@@ -1,6 +1,6 @@
 # This module scrapes the radio schedule from webpage
 
-from passwords import parameters
+from params import parameters
 import re
 import logging
 from selenium import webdriver
@@ -50,7 +50,8 @@ class Schedule:
         # loop over shows in schedule: create a new schedule w only shows that have a reference in keywords.
         for show_time, show_name in schedule_tuples:
             for key in parameters.show_keywords:
-                if (key in show_name.lower()): #and ('*' not in show_name):
+                # ignore shows with '*' (replays)
+                if (key in show_name.lower()) and ('*' not in show_name):
                     day = [datetime.today().weekday()]
                     # TODO: do not return day in a list.
                     start_time, end_time = show_time.split('–')
@@ -58,5 +59,4 @@ class Schedule:
 
         return self.schedule_data
 
-# something wrong in this get schedule, it seems to create duplicate entries and fails sometimes.
 #print(Schedule().get_schedule)

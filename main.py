@@ -15,7 +15,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 import maintanance, gdrive
-from passwords import parameters
+from params import parameters
 from schedule import Schedule
 from recording import Recording
 
