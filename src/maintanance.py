@@ -1,4 +1,4 @@
-## for deleting old recordings
+# for deleting old recordings
 import logging
 import pickle
 from datetime import datetime
@@ -43,11 +43,11 @@ def clean_recordings(path):
         return path_content
 
 
-## logfile maint. if filesize>100mb, cleans half the rows in the file
+# logfile maint. if filesize>100mb, cleans half the rows in the file
 def clean_log():
     limit = 0.1 * 10 ** 9  # 100Mb
     if os.path.getsize('logfile.log') > limit:
-        #delete half of rows in the file.
+        # delete half of rows in the file.
         with open('logfile.log') as old:
             lines = old.readlines()
             halfway = int(round(len(lines)/2))
