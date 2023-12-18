@@ -29,7 +29,7 @@ def upload(path):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file('../params/credentials.json', SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('../params/credentials.json', parameters.SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open('../params/token.pickle', 'wb') as token:

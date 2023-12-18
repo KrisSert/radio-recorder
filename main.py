@@ -4,19 +4,20 @@
 import logging
 import os.path
 import time
-from datetime import datetime
+import datetime
 from params import parameters
 from src import maintanance, gdrive
 from src.schedule import Schedule
 from src.recording import Recording
 
 
-logging.basicConfig(filename=parameters.logfile_path, level=logging.INFO, format='%(asctime)s;%(message)s')
+# initiate logging
+logging.basicConfig(filename=parameters.logfile_path,
+                    level=logging.INFO,
+                    format='%(asctime)s;%(message)s'
+                    )
 # to silence the "ModuleNotFoundError: No module named 'oauth2client'" Error
 logging.getLogger('googleapiclient.discovery_cache').setLevel(logging.ERROR)
-
-# If modifying these scopes, delete the file token.pickle.
-SCOPES = parameters.SCOPES
 
 
 def check_if_any_show_running(todays_schedule):
@@ -31,10 +32,10 @@ def check_if_any_show_running(todays_schedule):
             Returns a list representing the ongoing radio show if one is found,
             or empty list if no show is currently running.
     """
-    current_time = datetime.now().time()
+    current_time = datetime.datetime.now().time()
     for show in todays_schedule:
-        show_start_time = datetime.strptime(show[1], '%H:%M:%S').time()
-        show_end_time = datetime.strptime(show[2], '%H:%M:%S').time()
+        show_start_time = datetime.datetime.strptime(show[1], '%H:%M:%S').time()
+        show_end_time = datetime.datetime.strptime(show[2], '%H:%M:%S').time()
         if show_start_time <= current_time <= show_end_time:
             return show  # return the show to call recording
     return []
@@ -45,23 +46,25 @@ def calculate_end_time(schedule):
     """
            Gets the ending time of the script (usually the ending time of the last show in the daily schedule).
 
-           Parameters:
-               todays_schedule (List of list): A list containing lists, which represent radio shows for the day.
-               Each list contains [show name, show start time, show end time].
+           :param schedule: (List of list):
+                A list containing lists, which represent radio shows for the day.
+                Each list contains [show name, show start time, show end time].
 
            Returns:
                Returns the ending time of the last show in the daily schedule,
                or current time if the schedule is empty,
                or None if any error occurs.
+
+
     """
     try:
         if not schedule:
             # If the schedule is empty, return the current time
-            end_time = datetime.now().time()
+            end_time = datetime.datetime.now().time()
         else:
             # Extract the end time of the last show from the schedule
             last_show_end_time = schedule[-1][2]
-            end_time = datetime.strptime(last_show_end_time, '%H:%M:%S').time()
+            end_time = datetime.datetime.strptime(last_show_end_time, '%H:%M:%S').time()
 
         logging.info('End time: ' + str(break_time))
         return end_time
@@ -72,13 +75,12 @@ def calculate_end_time(schedule):
         return None
 
 
-
 def main():
     """ Main logic:
         - reads the daily radio schedule.
         - records the radio shows defined in the schedule into mp3 locally
         - uploads the recorded radio shows to google drive.
-        - runs data cleanup: locally, on google drive, on logfile.
+        - runs data cleanup: locally, on Google Drive, on logfile.
     """
     logging.info('_____________________________________________________')
     logging.info("Start of execution:")
@@ -88,8 +90,9 @@ def main():
 
     if todays_schedule:
 
-        current_time = datetime.now().time()
-        today_end_time = calculate_end_time(todays_schedule) # if schedule is empty: today_end_time is current_time
+        current_time = datetime.datetime.now().time()
+        today_end_time = calculate_end_time(todays_schedule)
+        # if schedule is empty: today_end_time is current_time
 
         # runs until time has reached limit (last_show_end_time)
         while current_time <= today_end_time:
@@ -98,13 +101,17 @@ def main():
             ongoing_show = check_if_any_show_running(todays_schedule)
             if ongoing_show:
                 # initiate recording of show
-                new_recording = Recording(stream_url=parameters.stream_url, show_name=ongoing_show[0], start_time=ongoing_show[1], end_time=ongoing_show[2])
+                new_recording = Recording(stream_url=parameters.stream_url,
+                                          show_name=ongoing_show[0],
+                                          start_time=ongoing_show[1],
+                                          end_time=ongoing_show[2]
+                                          )
                 new_recording.record()
                 # call upload() to upload file to google drive
                 gdrive.upload(new_recording.target_path)
 
             time.sleep(1)
-            current_time = datetime.now().time()
+            current_time = datetime.datetime.now().time()
 
         logging.info('End time met.. ending process')
 
@@ -116,6 +123,7 @@ def main():
     else:
 
         logging.info('there are no shows to record today, ending process...')
+
 
 if __name__ == '__main__':
     main()
