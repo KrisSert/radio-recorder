@@ -1,23 +1,27 @@
 # This is the main script.
 # Daily runs to be scheduled on workdays at 06:50 before any radio shows start.
 
+import datetime
 import logging
 import os.path
 import time
-import datetime
+
 from params import parameters
 from src import maintanance, gdrive
-from src.schedule import Schedule
 from src.recording import Recording
+from src.schedule import Schedule
 
 
-# initiate logging
-logging.basicConfig(filename=parameters.logfile_path,
-                    level=logging.INFO,
-                    format='%(asctime)s;%(message)s'
-                    )
-# to silence the "ModuleNotFoundError: No module named 'oauth2client'" Error
-logging.getLogger('googleapiclient.discovery_cache').setLevel(logging.ERROR)
+def configure_logging():
+    """
+        Initiates and configures the logger for the execution.
+    """
+    logging.basicConfig(
+        filename=parameters.logfile_path,
+        level=logging.INFO,
+        format='%(asctime)s;%(message)s'
+    )
+    logging.getLogger('googleapiclient.discovery_cache').setLevel(logging.ERROR)
 
 
 def check_if_any_show_running(todays_schedule):
@@ -44,18 +48,16 @@ def check_if_any_show_running(todays_schedule):
 # calculate when the script ends execution: end_time of last show by default
 def calculate_end_time(schedule):
     """
-           Gets the ending time of the script (usually the ending time of the last show in the daily schedule).
+        Gets the ending time of the script (usually the ending time of the last show in the daily schedule).
 
-           :param schedule: (List of list):
-                A list containing lists, which represent radio shows for the day.
-                Each list contains [show name, show start time, show end time].
+        :param schedule: (List of list):
+            A list containing lists, which represent radio shows for the day.
+            Each list contains [show name, show start time, show end time].
 
-           Returns:
-               Returns the ending time of the last show in the daily schedule,
-               or current time if the schedule is empty,
-               or None if any error occurs.
-
-
+        Returns:
+            Returns the ending time of the last show in the daily schedule,
+            or current time if the schedule is empty,
+            or None if any error occurs.
     """
     try:
         if not schedule:
@@ -66,7 +68,7 @@ def calculate_end_time(schedule):
             last_show_end_time = schedule[-1][2]
             end_time = datetime.datetime.strptime(last_show_end_time, '%H:%M:%S').time()
 
-        logging.info('End time: ' + str(break_time))
+        logging.info('End time: ' + str(end_time))
         return end_time
 
     except ValueError as e:
@@ -82,6 +84,9 @@ def main():
         - uploads the recorded radio shows to google drive.
         - runs data cleanup: locally, on Google Drive, on logfile.
     """
+
+    # initiate logging
+    configure_logging()
     logging.info('_____________________________________________________')
     logging.info("Start of execution:")
 
