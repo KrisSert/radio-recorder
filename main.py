@@ -38,8 +38,8 @@ def check_if_any_show_running(todays_schedule):
     """
     current_time = datetime.datetime.now().time()
     for show in todays_schedule:
-        show_start_time = datetime.datetime.strptime(show[1], '%H:%M:%S').time()
-        show_end_time = datetime.datetime.strptime(show[2], '%H:%M:%S').time()
+        show_start_time = datetime.datetime.strptime(show[1], '%H:%M').time()
+        show_end_time = datetime.datetime.strptime(show[2], '%H:%M').time()
         if show_start_time <= current_time <= show_end_time:
             return show  # return the show to call recording
     return []
@@ -66,7 +66,7 @@ def calculate_end_time(schedule):
         else:
             # Extract the end time of the last show from the schedule
             last_show_end_time = schedule[-1][2]
-            end_time = datetime.datetime.strptime(last_show_end_time, '%H:%M:%S').time()
+            end_time = datetime.datetime.strptime(last_show_end_time, '%H:%M').time()
 
         logging.info('End time: ' + str(end_time))
         return end_time
@@ -113,7 +113,7 @@ def main():
                                           )
                 new_recording.record()
                 # call upload() to upload file to google drive
-                gdrive.upload(new_recording.target_path)
+                # gdrive.upload(new_recording.target_path)
 
             time.sleep(1)
             current_time = datetime.datetime.now().time()
@@ -121,9 +121,9 @@ def main():
         logging.info('End time met.. ending process')
 
         # maintenance processes. (cleans recordings & logfile)
-        recordings_state = maintanance.clean_recordings('recordings/')
-        gdrive.clean_gdrive(recordings_state)
-        maintanance.clean_log()
+        # recordings_state = maintanance.clean_recordings('recordings/')
+        # gdrive.clean_gdrive(recordings_state)
+        # maintanance.clean_log()
 
     else:
 

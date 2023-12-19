@@ -15,6 +15,8 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 
+# TODO: redesign this as class and get working properly
+
 def upload(path):
     logging.info('Starting upload of file: ' + path + ' to GoogleDrive')
     creds = None

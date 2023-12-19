@@ -41,7 +41,7 @@ class Schedule:
             logging.error(f"Selenium NoSuchElementException: {e}. Recording all shows.")
             return parameters.DEFAULT_SCHEDULE
         finally:
-            driver.close()
+            driver.quit()
 
         # create the schedule_data
         # structure: [show_name, start_time, end_time (datetime.now().strftime("%H:%M:%S.%f"))]

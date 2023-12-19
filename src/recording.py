@@ -25,7 +25,13 @@ class Recording:
     def construct_target_filepath(show_name):
         current_date = datetime.now().strftime("%d-%m-%Y")
         show_name = f"{current_date}_{show_name}.mp3"
-        return  'recordings/' + show_name
+        # Get the directory of the current script
+        script_directory = os.path.dirname(os.path.abspath(__file__))
+        # Navigate to the project root by going up one level (assuming the script is in a subfolder)
+        project_root = os.path.abspath(os.path.join(script_directory, '..'))
+        # Construct the target file path by joining the project root and the "recordings" folder
+        target_filepath = os.path.join(project_root, 'recordings', show_name)
+        return target_filepath
 
     @staticmethod
     def compress(audio_file, target_bitrate=22):
