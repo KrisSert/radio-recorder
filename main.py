@@ -6,8 +6,9 @@ import logging
 import os.path
 import time
 
-from params import parameters
-from src import maintanance, gdrive
+import params
+from src import maintanance
+from src.gdrive import GoogleDriveUploader
 from src.recording import Recording
 from src.schedule import Schedule
 
@@ -17,7 +18,7 @@ def configure_logging():
         Initiates and configures the logger for the execution.
     """
     logging.basicConfig(
-        filename=parameters.logfile_path,
+        filename=params.logfile_path,
         level=logging.INFO,
         format='%(asctime)s;%(message)s'
     )
@@ -28,7 +29,7 @@ def check_if_any_show_running(todays_schedule):
     """
         Determines the currently ongoing radio show from the provided schedule.
 
-        Parameters:
+        :param:
             todays_schedule (List of list): A list containing lists, which represent radio shows for the day.
             Each list contains [show name, show start time, show end time].
 
@@ -106,14 +107,16 @@ def main():
             ongoing_show = check_if_any_show_running(todays_schedule)
             if ongoing_show:
                 # initiate recording of show
-                new_recording = Recording(stream_url=parameters.stream_url,
+                new_recording = Recording(stream_url=params.stream_url,
                                           show_name=ongoing_show[0],
                                           start_time=ongoing_show[1],
                                           end_time=ongoing_show[2]
                                           )
-                new_recording.record()
-                # call upload() to upload file to google drive
-                # gdrive.upload(new_recording.target_path)
+                recording_file_path = new_recording.record()
+
+                #  upload file to google drive
+                gdrive_uploader = GoogleDriveUploader()
+                gdrive_uploader.upload(recording_file_path)
 
             time.sleep(1)
             current_time = datetime.datetime.now().time()
@@ -132,3 +135,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    # TODO: create venv and regenerate the requirements.txt

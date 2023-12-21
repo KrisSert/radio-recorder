@@ -4,8 +4,7 @@ chromedriver_path: str = "chromedriver.exe"
 
 logfile_path: str = 'logs/logfile.log'
 
-# find chrome binaries here: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads
-# .json
+# find chrome binaries here: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
 chrome_binary_path: str = "chrome-win64/chrome.exe"
 schedule_url: str = "https://www.aripaev.ee/raadio/otse"
 schedule_xpath: str = '/html/body/div[1]/div/div[1]/div[4]/ul/li[1]/div/ul'
@@ -13,8 +12,14 @@ cookies_button: str = "/html/body/div[1]/div/div[1]/div[5]/div/div/ul/li[1]/span
 
 stream_url: str = "https://www.aripaev.ee/raadio/stream.mp3"
 
+# Google drive API scopes
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
+
+
+# Google drive folder name, where recordings are located.
+google_drive_folder = 'Äripäeva raadio'
+
 
 DEFAULT_SCHEDULE = [
     ['Hommikuprogramm', '07:00:00', '10:00:00'],
