@@ -61,7 +61,7 @@ class Recording:
             logging.error(f'Request failed: {req_exception}')
         except Exception as e:
             logging.error(f'An unexpected error occurred: {e}')
-        return None
+        return self.target_path
 
 
 """
