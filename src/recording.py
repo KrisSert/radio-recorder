@@ -62,13 +62,3 @@ class Recording:
         except Exception as e:
             logging.error(f'An unexpected error occurred: {e}')
         return self.target_path
-
-
-"""
-new_recording = Recording("https://www.aripaev.ee/raadio/stream.mp3",
-                          "TESTSHOW0",
-                          "13:07",
-                          "13:08"
-                          )
-new_recording.record()
-"""

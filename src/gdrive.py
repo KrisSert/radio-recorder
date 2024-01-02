@@ -13,12 +13,11 @@ from googleapiclient.http import MediaFileUpload
 import params
 
 
-class GoogleDriveUploader:
+class GoogleDriveManager:
     def __init__(self):
         self.service = self.build_drive_service()
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.credentials_path = os.path.join(self.script_dir, '..', 'params', 'credentials.json')
-
 
     def load_credentials(self):
         """Load credentials from the token file or initiate the OAuth flow if needed.
@@ -81,7 +80,7 @@ class GoogleDriveUploader:
         while response is None:
             status, response = request.next_chunk()
             if status:
-                logging.info("Uploaded %d%%." % int(status.progress() * 100))
+                logging.info(f"Uploaded {int(status.progress() * 100)}%")
 
         logging.info('gdrive.upload_file_in_chunks() :: Upload succeeded')
         return response.get('id')
@@ -115,66 +114,61 @@ class GoogleDriveUploader:
             logging.info(f"No folder with the name '{params.google_drive_folder}' found.")
 
 
-    # TODO: modify this reusing the class functions..
-    # same algorithm as clean_recordings(), except running in Google Drive folder.
+    # same logic as maintenance.clean_recordings(), except running in Google Drive folder.
     def clean_gdrive(self, recordings_state):
-        creds = None
-        if os.path.exists('../params/token.pickle'):
-            with open('../params/token.pickle', 'rb') as token:
-                creds = pickle.load(token)
+        drive_folder_name = 'Äripäeva raadio'
+        drive_folder_id = '1rtqiz_L-hp1ibL_KGhpgdlL1KF0bRCAx'
 
-        # If there are no (valid) credentials available, let the user log in.
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
-                flow = InstalledAppFlow.from_client_secrets_file(self.credentials_path, parameters.SCOPES)
-                creds = flow.run_local_server(port=0)
-            # Save the credentials for the next run
-            with open('../params/token.pickle', 'wb') as token:
-                pickle.dump(creds, token)
-        service = build('drive', 'v3', credentials=creds,
-                        cache_discovery=False)  # cache_discovery=false avoids "ModuleNotFoundError: No module named 'oauth2client'" Error
-
-        # Call the Drive v3 API
         # Iterate over the folders in Google Drive to find "Äripäeva raadio"
-        results = service.files().list(fields="nextPageToken, files(id, name)").execute()
-        items = results.get('files', [])
-        if not items:
-            logging.info('upload() :: No files/folders existing in Google Drive directory')
+        drive_folder = self.find_drive_folder(drive_folder_name, drive_folder_id)
+
+        if drive_folder:
+
+            # compare local recordings vs google drive recordings:
+            local_recordings = [rec[1] for rec in recordings_state]
+            drive_recordings = self.get_drive_files_in_folder(drive_folder_id)
+
+            files_to_delete = self.find_files_to_delete(drive_recordings, local_recordings)
+
+            for filename in files_to_delete:
+                file_id = self.get_file_id_by_name(drive_recordings, filename)
+                self.delete_file(file_id)
+                logging.info(f'clean_Drive() :: Deleting file {filename} in GoogleDrive, id: {file_id}')
         else:
-            for item in items:
-                # item['name'] is the desired folder name in google drive
-                # item['id'] is specific to the distinct folder
-                if item['name'] == 'Äripäeva raadio' and item['id'] == '1rtqiz_L-hp1ibL_KGhpgdlL1KF0bRCAx':
-                    logging.info('maintenance.clean_Drive() :: '
-                                 + 'syncing "recordings" between local & Google_Drive/'
-                                 + item['name'])
-
-                    # clean the local recordings list by creating list of files.
-                    local_rec = []
-                    for rec in recordings_state:
-                        local_rec.append(rec[1])
-
-                    # create list of files in Google drive folder
-                    g_drive_rec = []
-                    results = service.files().list(q="'" + '1rtqiz_L-hp1ibL_KGhpgdlL1KF0bRCAx' + "' in parents",
-                                                   pageSize=10,
-                                                   fields="nextPageToken, files(id, name)").execute()
-                    files = results.get('files', [])
-                    for file in files:
-                        g_drive_rec.append(file.get('name'))
-
-                    # find the tracks to delete from Google Drive, by subtracting: g_drive_rec-local_rec
-                    files_to_delete = [x for x in g_drive_rec if x not in local_rec]
-
-                    for el in files_to_delete:
-                        # delete based on file id
-                        for file in files:
-                            if file.get('name') == el:
-                                logging.info('maintenance.clean_Drive() :: '
-                                             + 'deleting file ' + file.get('name') + 'in GoogleDrive, '
-                                             + 'id: ' + file.get('id'))
-                                service.files().delete(fileId=file.get('id')).execute()
+            logging.info('upload() :: No files/folders existing in Google Drive directory')
 
 
+    def find_drive_folder(self, folder_name, folder_id):
+        results = self.service.files().list(fields="nextPageToken, files(id, name)").execute()
+        items = results.get('files', [])
+
+        # item['name'] is the desired folder name in google drive
+        # item['id'] is specific to the distinct folder
+        for item in items:
+            if item['name'] == folder_name and item['id'] == folder_id:
+                logging.info(
+                    f'clean_Drive() :: Syncing "recordings" between local & Google Drive/{folder_name}')
+                return item
+
+        return None
+
+
+    def get_drive_files_in_folder(self, folder_id):
+        results = self.service.files().list(q=f"'{folder_id}' in parents", pageSize=10,
+                                            fields="nextPageToken, files(id, name)").execute()
+        return results.get('files', [])
+
+
+    def find_files_to_delete(self, drive_recordings, local_recordings):
+        return [filename for filename in drive_recordings if filename not in local_recordings]
+
+
+    def get_file_id_by_name(self, drive_recordings, filename):
+        for file in drive_recordings:
+            if file.get('name') == filename:
+                return file.get('id')
+        return None
+
+
+    def delete_file(self, file_id):
+        self.service.files().delete(fileId=file_id).execute()

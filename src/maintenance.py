@@ -35,8 +35,8 @@ class Maintenance:
                 smallest_key = file[0]
 
         # if path_size has exceeded the limit, deletes the oldest days recordings
-        self.rec_path_content_post_delete = []
         if current_path_size > limit:
+            self.rec_path_content_post_delete = []
             for file in self.rec_path_content:
                 if file[0] == smallest_key:
                     logging.info(f"maintenance.clean_recordings() deleting {self.local_path} {file[1]}")
