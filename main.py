@@ -1,6 +1,4 @@
-# This is the main script.
 # Daily runs to be scheduled on workdays at 06:50 before any radio shows start.
-
 import datetime
 import logging
 import os.path
@@ -11,6 +9,7 @@ from src import maintanance
 from src.gdrive import GoogleDriveUploader
 from src.recording import Recording
 from src.schedule import Schedule
+from src.maintenance import Maintenance
 
 
 def configure_logging():
@@ -91,7 +90,7 @@ def main():
     logging.info('_____________________________________________________')
     logging.info("Start of execution:")
 
-    todays_schedule = Schedule().get_schedule
+    todays_schedule: list = Schedule().get_schedule
     logging.info('shows_on_today:' + str(todays_schedule))
 
     if todays_schedule:
@@ -100,9 +99,9 @@ def main():
         today_end_time = calculate_end_time(todays_schedule)
         # if schedule is empty: today_end_time is current_time
 
+        logging.info('script running..')
         # runs until time has reached limit (last_show_end_time)
         while current_time <= today_end_time:
-            logging.info('script running..')
 
             ongoing_show = check_if_any_show_running(todays_schedule)
             if ongoing_show:
@@ -123,10 +122,11 @@ def main():
 
         logging.info('End time met.. ending process')
 
-        # maintenance processes. (cleans recordings & logfile)
-        # recordings_state = maintanance.clean_recordings('recordings/')
-        # gdrive.clean_gdrive(recordings_state)
-        # maintanance.clean_log()
+        # maintenance processes. (cleans recordings folder & logfile, if too large)
+        new_local_maintenance = Maintenance()
+        new_local_maintenance.clean_recordings('recordings/')
+        new_local_maintenance.clean_log()
+        # clean files in Google Drive target folder, if taking up too much space
 
     else:
 
@@ -137,3 +137,4 @@ if __name__ == '__main__':
     main()
 
     # TODO: create venv and regenerate the requirements.txt
+    # Create tests
