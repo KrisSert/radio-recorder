@@ -1,15 +1,13 @@
-# for deleting old recordings
+import os
 import logging
 import pickle
 from datetime import datetime
-from google.auth.transport.requests import Request
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
 
 
-# Maintenance in local root/recordings, root/logs folders'
+# Maintenance in local root/recordings, root/logs folders
 
 class Maintenance:
+
     def __init__(self, local_path='recordings/'):
         self.local_path = local_path
         self.log_file_path = os.path.join('logs', 'logfile.log')
@@ -46,7 +44,7 @@ class Maintenance:
 
         else:
             logging.info(f"maintenance.clean_recordings() - plenty of space left in {self.local_path}")
-            logging.info(f"Used space: {str(path_size / limit)}%")
+            logging.info(f"Used space: {str(current_path_size / limit)}%")
 
     # logfile maintenance. if file size>100mb, cleans half the rows in the file
     def clean_log(self):

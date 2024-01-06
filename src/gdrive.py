@@ -14,6 +14,7 @@ import params
 
 
 class GoogleDriveManager:
+
     def __init__(self):
         self.service = self.build_drive_service()
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -123,7 +124,6 @@ class GoogleDriveManager:
         drive_folder = self.find_drive_folder(drive_folder_name, drive_folder_id)
 
         if drive_folder:
-
             # compare local recordings vs google drive recordings:
             local_recordings = [rec[1] for rec in recordings_state]
             drive_recordings = self.get_drive_files_in_folder(drive_folder_id)

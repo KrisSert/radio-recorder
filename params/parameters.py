@@ -16,10 +16,8 @@ stream_url: str = "https://www.aripaev.ee/raadio/stream.mp3"
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-
 # Google drive folder name, where recordings are located.
 google_drive_folder = 'Äripäeva raadio'
-
 
 DEFAULT_SCHEDULE = [
     ['Hommikuprogramm', '07:00:00', '10:00:00'],

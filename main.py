@@ -6,7 +6,6 @@ import time
 
 import params
 import util
-from src import maintanance
 from src.gdrive import GoogleDriveManager
 from src.recording import Recording
 from src.schedule import Schedule
@@ -31,7 +30,7 @@ def main():
     logging.info('shows_on_today:' + str(today_schedule))
 
     # go here if there is something to record today:
-    if todays_schedule:
+    if today_schedule:
 
         current_time = datetime.datetime.now().time()
         today_end_time = util.calculate_end_time(today_schedule)
@@ -62,7 +61,7 @@ def main():
 
         # maintenance processes. (cleans recordings folder & logfile, if too large)
         new_local_maintenance = Maintenance()
-        new_local_maintenance.clean_recordings('recordings/')
+        new_local_maintenance.clean_recordings()
         new_local_maintenance.clean_log()
 
         # clean files in Google Drive target folder, if execution has also deleted locally
@@ -77,5 +76,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-    # TODO: create venv and regenerate the requirements.txt
-    # Create tests
+    # TODO:
+    # Create test/test_main tests
+    # schedule w Airflow to AWS. DBT?
