@@ -5,9 +5,13 @@
 # user defined
 __pycache__/
 .idea/
+
+# user defined - dependencies
 chrome-win64/
 chromedriver.exe
 ffmpeg-6.1-full_build/
+
+# user_defined - credentials
 params/__pycache__/
 params/credentials.json
 params/token.pickle
