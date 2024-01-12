@@ -76,6 +76,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-    # TODO:
-    # schedule w Airflow to AWS. DBT?
-    # readme.md
+    # TODO: schedule w Airflow?
