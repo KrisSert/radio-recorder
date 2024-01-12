@@ -77,5 +77,5 @@ if __name__ == '__main__':
     main()
 
     # TODO:
-    # Create test/test_main tests
     # schedule w Airflow to AWS. DBT?
+    # readme.md
