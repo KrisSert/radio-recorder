@@ -4,6 +4,8 @@
 Radio-Recorder is a project to record radio shows from a web stream & store the recordings in your Google Drive account.
 This enables to listen radio shows after they have been on air (feature commonly behind a paywall for private radio stations)
 
+The project is by default configured to record the Estonian business radio station 'Äripäev'.
+
 ---
 
 ### Architecture:
