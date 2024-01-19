@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  radio-recorder:
+    build:
+      context: chrome-win64
+    image: python:latest
+    container_name: radio-recorder-container
+    volumes:
+      - .:/radio-recorder

@@ -1,0 +1,8 @@
+__pycache__/
+ffmpeg-6.1-full_build/
+chrome-win64/
+.idea/
+recordings/
+venv/
+chromedriver.exe
+.pytest_cache/
